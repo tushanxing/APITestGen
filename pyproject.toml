@@ -1,7 +1,7 @@
 [project]
 name = "APITestGen"
 version = "0.1.0"
-description = "Default template for PDM package"
+description = "API测试用例自动生成工具 | API Test Cases Auto Generator"
 authors = [
     {name = "tushanxing", email = "tushanxing1995@gmail.com"},
 ]
@@ -11,9 +11,10 @@ dependencies = ["orjson>=3.11.3",
 requires-python = "==3.10.*"
 readme = "README.md"
 license = {text = "MIT"}
+scripts = {apitestgen = "apitestgen.cli.cli:main"}
 
 [tool.pdm]
-distribution = false
+distribution = true
 
 [tool.pdm.dev-dependencies]
 dev = [
